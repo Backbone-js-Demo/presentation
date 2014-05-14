@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Snake Demo</title>
+		<link rel="stylesheet" href="snake.css">
+		
+		
+		<script src="json2.js"></script>
+		<script src="jquery-1.11.1.js"></script> 
+		<script src="underscore.js"></script>
+		<script src="backbone.js"></script>
+		<script src="backbone.localStorage.js"></script>
+		<script type="text/javascript" src="snake.js"></script>
+		
+	 
+	</head>
+	<body >
+		<div id="firstDiv" class="moveable">
+			<script type="text/template" id="item-template">
+			<div class="view">
+				<input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+				<label><%- name %></label>
+			</div>
+
+			<input class="edit" type="text" value="<%- name %>" />
+
+			</script>
+		
+		</div> 
+		
+		<div id="border"></div>
+		<p id="score"></p>
+		
+
+	</body>
+	
+</html>
