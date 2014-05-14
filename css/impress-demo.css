@@ -205,6 +205,12 @@ a:focus {
     margin-top: 30px;
 }
 
+.slide ul, li{
+    margin: 30px;
+    padding: 30px;
+    
+}
+
 .slide q strong {
     white-space: nowrap;
 }
