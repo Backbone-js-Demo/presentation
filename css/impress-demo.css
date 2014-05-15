@@ -60,12 +60,18 @@ body {
 b, strong { font-weight: bold }
 i, em { font-style: italic }
 
+ul li li:before{ content:"-"; position:relative; left:-15px;}
+ul li li{ 
+	text-indent:-10px; 
+	list-style-type: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
     padding: 0 0.1em;
     background: rgba(255,255,255,0.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+   /* text-shadow: -1px -1px 2px rgba(100,100,100,0.9);*/
     border-radius: 0.2em;
 
     -webkit-transition: 0.5s;
@@ -164,7 +170,6 @@ a:focus {
 .slide ul, li{
     padding-left: 20px;
     padding-top: 5px;
-    
 }
 
 .slide q strong {
