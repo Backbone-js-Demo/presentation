@@ -19,21 +19,20 @@
 </head>
 
 <body class="impress-not-supported">
-	
-	<!--     fallback message-->
+
 	<div class="fallback-message">
-	    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+		<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 	</div>
-	
+
 	<div id="impress">
 		<div id="Title" class="step slide" data-x="-1000" data-y="-1500">
-			        <q>Backbone.js</q><br>
+			<br><br><q>Backbone.js</q><br><br>
 			<p>Marc-Oliver Seidler und Ulrike Piontek</p>
 		</div>
-		
+
 		<div id="Agenda" class="step slide" data-x="0" data-y="-1500">
-			<q>Agenda</q>
+			<q>Agenda</q><br>
 			<ul>
 				<li>Backbone.js
 				<ul>
@@ -41,156 +40,143 @@
 					<li>Das MVC-Framework</li>
 					<li>Single Page Applications </li>
 				</ul></li>
-				<li>Eigenschaften</li>
 				<li>Typischer Aufbau</li>
 				<li>Demo</li>
 				<li>Einsatz in der realen Welt</li>
 			</ul>
 		</div>
-	
-		<div class="step slide" data-x="1000" data-y="-1500">
-	        <q>Backbone.js</q>
+
+		<div id="Backbone.js1" class="step slide" data-x="1000" data-y="-1500">
+			<q>Backbone.js</q><br>
+			<b> Eigenschaften</b><p></p>
 			<ul>
 				<li>Eher Bibliothek, kein Framework </li>
-				<li>Baukasten f&uuml;r Single-Page-Apps </li>
-				<li>Verwendet Model View Controller (MVC) </li>
+				<li>strukturiert Code durch Einteilung in MVC-Framework</li>
+				<li>ist ein Baukasten f&uuml;r Single-Page-Apps </li>
 				<li>Bottom-Up-Prinzip </li>
-				<li>k&uuml;mmert sich nur um Kernfunktionalit&auml;ten </li>
-				<li>Plugin-System </li>
-				<ul>
-					<li>Start eines Projekts ist Architektur frei w&auml;hlbar </li>
-					<li>verschiedene Frameworks als Backbone.js-Aufsatz (Backbone.Marionette)</li>
-				</ul>
-			</ul>
-		 </div>
-		
-		<div id="Backbone.js2" class="step slide" data-x="1000" data-y="-500">
-	        	<q>Backbone.js (2)</q>
-			<ul>
-				<li>Kritik  </li>
-				<ul>
-					<li>minimalistischen Herangehensweise </li>
-					<li>gleiche Logik mehrmals programmieren </li>
-				</ul>
-				<li>Voraussetzung </li>
-				<ul>
-					<li>Ajax-Bibliothek (z.B. jQuery) </li>
-					<li>Utility-Bibliothek Underscore.js</li>
-				</ul>
-			</ul>
-		</div>
-		
-		<div id="Ursprung" class="step slide" data-x="1000" data-y="500">
-			<q>Ursprung von Backbone.js</q>
-			<ul>
-				<li>Nachfolger von Flash  </li>
-				<ul>
-					<li>unzureichende Performance  </li>
-					<li>auf iPhone und iPad nicht unterstützt </li>
-					<li>Ist proprietäre Technologie </li>
-				</ul>
-			</ul>
-		</div>
-		
-		<div id="MVC" class="step slide" data-x="1000" data-y="1500">
-	        	<q>Das MVC-Framework</q>
-		        	<div>
-					<p><img src="https://cloud.githubusercontent.com/assets/7532238/2968868/5d87dcfa-db46-11e3-8949-700dd25566cc.png" width=50% alt="MVC-Framework" ALIGN=LEFT></p>
-					<p>	
-						<b>Model:</b> enth&auml;lt Daten und Programmlogik, diese sind nicht nach au&szlig;en sichtbar.</br></br>
-						<b>View: </b> gibt die Ansicht des Models aus, die ben&ouml;tigten Daten kommen vom Model</br></br>
-						<b>Controller: </b>steuert den Verarbeitungsprozess. Nimmt Userinput entgegen und &auml;ndert das Model ab.
-					</p>
-				</div>
-		</div>
-		
-		<div id="Single-Page-Applications" class="step slide" data-x="1000" data-y="2500">
-			<q>Single Page Applications</q>
-			<ul>
-				<li>Besteht aus einzelnem HTML-Dokument </li>
-				<li>Inhalt wird dynamisch nachgeladen </li>
-				<li>Datenaustausch mittels JSON oder XML </li>
-				<li>Beispiel Webseiten </li>
-				<ul>
-					<li>Facebook </li>
-					<li>Soundcloud</li>
-				</ul>
-				<li>Techniken </li>
-				<ul>
-					<li>Ajax</li>
-					<li>Flash</li>
-					<li>WebSockets</li>
-				</ul>
-			</ul>
-		</div>
-		 
-		<div id="Eigenschaften" class="step slide" data-x="2000" data-y="-1500">
-			<q>Eigenschaften von Backbone.js</q>
-			<ul>
-				<li>Strukturiert den Javascript-Code durch Einteilung in MVC-Framework</li>
-				<li>Erm&ouml;glicht Single Page Applications in Javascript umzusetzen</li>
+				<li>k&uuml;mmert sich nur um Kernfunktionalit&auml;ten, Plugin-System </li>
 				<li>Bietet die M&ouml;glichkeit Teile des UI zu ver&auml;ndern ohne die gesamte Seite neu zu laden</li>
 				<li>unterst&uuml;tzt REST APIs (Read, Write, Delete)</li>
 			</ul>
 		</div>
 		
-		<div id="Aufbau" class="step slide" data-x="3000" data-y="-1500">
-		        <q>Typischer Aufbau</q>
-			<pre style="font-size: large"><code>
+		<div id="Backbone.js2" class="step slide" data-x="1000" data-y="-500">
+			<q>Backbone.js</q><br>
+				<b>Kritik </b><br><p></p>
+				<ul>
+					<li>minimalistischen Herangehensweise, daher kaum Zusatzfunktionen </li>
+					<li>h&auml;ufige Funktionen m&uuml;ssen selbst programmiert werden </li>
+				</ul><br>
+				
+				<b>Voraussetzungen </b><br><p></p>
+				<ul>
+					<li>Utility-Bibliothek Underscore.js unbedingt notwendig</li>
+					<li>REST-Funktionen ben&ouml;tigen eigene Frameworks (z.B. jQuery, json2) </li>
+				</ul>
+		</div>
+		
+		<div id="Ursprung" class="step slide" data-x="1000" data-y="500">
+			<q>Ursprung von Backbone.js</q><br>
+			<p>im Jahre 2010 von Jeremy Ashkenas f&uuml;r <i><a href="http://www.documentcloud.org/home">DocumentCloud</a></i>, eine Dateiverwaltungs-Software, entwickelt</p><br>
+			<p>wurde als Nachfolger von Flash entwickelt</p>
+			<p>
+			
+			<br>
+			<b>Kritik an Flash, die Backbone.js beheben soll:</b>
+			<ul>
+				<li>unzureichende Performance </li>
+				<li>auf iPhone und iPad nicht unterst&uuml;tzt </li>
+				<li>ist propriet&auml;re Technologie </li>
+			</ul>
+		</div>
+
+		<div id="MVC" class="step slide" data-x="1000" data-y="1500">
+			<q>Das MVC-Framework</q><p></p>
+			<div>
+				<p><img src="https://cloud.githubusercontent.com/assets/7532238/2968868/5d87dcfa-db46-11e3-8949-700dd25566cc.png" width=50% alt="MVC-Framework" ALIGN=LEFT></p>
+				<p>	
+					<b>Model:</b> enth&auml;lt Daten und Programmlogik, diese sind nicht nach au&szlig;en sichtbar.</br></br>
+					<b>View: </b> gibt die Ansicht des Models aus, die ben&ouml;tigten Daten kommen vom Model</br></br>
+					<b>Controller: </b>steuert den Verarbeitungsprozess. Nimmt Userinput entgegen und &auml;ndert das Model ab.
+				</p>
+			</div>
+		</div>
+
+		<div id="Single-Page-Applications" class="step slide" data-x="1000" data-y="2500">
+			<q>Single Page Applications</q><br>
+			<ul>
+				<li>Besteht aus einzelnem HTML-Dokument, Inhalt wird dynamisch nachgeladen </li>
+				<li>Datenaustausch mittels JSON oder XML </li>
+			</ul><br>
+			<b>Beispiele</b>
+			<ul>
+				<li><a href="https://www.facebook.com/">Facebook</a></li>
+				<li><a href="https://soundcloud.com/">Soundcloud</a></li>
+			</ul><br>
+			<b>Techniken </b>
+			<ul>
+				<li>Ajax</li>
+				<li>Flash</li>
+				<li>WebSockets</li>
+			</ul>
+		</div>
+
+		<div id="Aufbau" class="step slide" data-x="2000" data-y="-1500">
+			<q>Typischer Aufbau</q>
+				<pre style="font-size: xx-large"><code>
+				<font color="black">
 				&lt;!doctype html>
 				&lt;head>
-				  &lt;title>Backbone.js Example&lt;/title>
+				        &lt;title>Backbone.js Example&lt;/title>
 				&lt;/head>
-				&lt;body>
-				    &lt;script src="json2.js">&lt;/script>
-				    &lt;script src="jquery-1.11.1.js">&lt;/script> 
-				    &lt;script src="underscore.js">&lt;/script>
-				    &lt;script src="backbone.js">&lt;/script>
-				    &lt;script src="backbone.localStorage.js">&lt;/script>
-				    &lt;script src="addressbook.js">&lt;/script>
-					&lt;/body>
+				&lt;body><font color="CornflowerBlue ">
+				        &lt;script src="json2.js">&lt;/script>
+				        &lt;script src="jquery-1.11.1.js">&lt;/script></font>
+				        &lt;script src="underscore.js">&lt;/script>
+				        &lt;script src="backbone.js">&lt;/script>
+				        &lt;script src="example.js">&lt;/script>
+				&lt;/body>
 				&lt;/html>
+				</font>
 			</code></pre>	
 		</div>
-		
-		<div id="Demo" class="step slide" data-x="3000" data-y="-500">
+
+		<div id="Demo" class="step slide" data-x="2000" data-y="-500">
+			<q>SCREENSHOT</q>
+			<p>LINK AUF DEMO</p>
 			<q><a href="http://backbone-js-demo.github.io/presentation/" target="_blank">Demo</a></q>
 		</div>
-		
-		<div id="Einsatz" class="step slide" data-x="4000" data-y="-1500">
+
+		<div id="Einsatz" class="step slide" data-x="3000" data-y="-1500">
 			<q>Einsatz in der realen Welt</q>
 			<table border="1">
-  <tr>
-    <th><img src="https://cloud.githubusercontent.com/assets/7556821/2968903/d3246bf4-db46-11e3-9f66-bff68f278166.jpg" width="100%" alt="rbmaradio.com"></th>
-    <th><img src="https://cloud.githubusercontent.com/assets/7556821/2983293/58269d88-dc21-11e3-9a96-9ed5ab4df5b0.png" width="100%" alt="LinkedIn"></th>
-  </tr>
-    <tr>
-		<th><a href="http://www.rbmaradio.com/">http://www.rbmaradio.com/</a></th>
-		<th><a href="https://www.linkedin.com/">https://www.linkedin.com/</a></th>
-	</tr>
-  <tr>
-    <td><img src="https://cloud.githubusercontent.com/assets/7556821/2970225/967510e8-db58-11e3-8277-f176412bbd39.png" width="100%" alt="Foursquare"></td>
-    <td><img src="https://cloud.githubusercontent.com/assets/7556821/2970202/181dd3b0-db58-11e3-9bda-b8f3ee714659.png" width="100%" alt="Soundcloud"></td>
-  </tr>
-    <tr>
-  	<th><a href="https://de.foursquare.com/">https://de.foursquare.com/</a></th>
-	<th><a href="https://soundcloud.com/">https://soundcloud.com/</a></th>
-	</tr>
-</table>
+				<tr>
+					<th><img width=90% src="https://cloud.githubusercontent.com/assets/7556821/2968903/d3246bf4-db46-11e3-9f66-bff68f278166.jpg" width="100%" alt="rbmaradio.com"></th>
+					<th><img width=90% src="https://cloud.githubusercontent.com/assets/7556821/2983293/58269d88-dc21-11e3-9a96-9ed5ab4df5b0.png" width="100%" alt="LinkedIn"></th>
+				</tr>
+				<tr>
+					<td><a href="http://www.rbmaradio.com/">http://www.rbmaradio.com/</a></td>
+					<td><a href="https://www.linkedin.com/">https://www.linkedin.com/</a></td>
+				</tr>
+				
+				<tr>
+					<td><img width=90% src="https://cloud.githubusercontent.com/assets/7556821/2970225/967510e8-db58-11e3-8277-f176412bbd39.png" width="100%" alt="Foursquare"></td>
+					<td><img width=90% src="https://cloud.githubusercontent.com/assets/7556821/2970202/181dd3b0-db58-11e3-9bda-b8f3ee714659.png" width="100%" alt="Soundcloud"></td>
+				</tr>
+				<tr>
+				   <td><a href="https://de.foursquare.com/">https://de.foursquare.com/</a></td>
+					<td><a href="https://soundcloud.com/">https://soundcloud.com/</a></td>
+				</tr>
+			</table>
 		</div>
-		
-		<div id="Fragen" class="step slide" data-x="5000" data-y="-1500">
+
+		<div id="Fragen" class="step slide" data-x="4000" data-y="-1500">
 			<br><br><br><br>
 			<q><center>Fragen?</center></q>
 		</div>
-		
+
 	</div>
-	
-	<script>
-		if ("ontouchstart" in document.documentElement) { 
-		    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-		}
-	</script>
+
 	<script src="js/impress.js"></script>
 	<script>impress().init();</script>
 
