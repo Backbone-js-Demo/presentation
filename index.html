@@ -4,18 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Pr&auml;sentation zu Backbone.js</title>
     
     <meta name="description" content="Pr&auml;sentation zu Backbone.js" />
     <meta name="author" content="Marc-Oliver Seidler und Ulrike Piontek" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
 
     <link href="css/impress-demo.css" rel="stylesheet" />
     
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body class="impress-not-supported">
@@ -41,7 +38,7 @@
 					<li>Single Page Applications </li>
 				</ul></li>
 				<li>Typischer Aufbau</li>
-				<li>Demo</li>
+				<li>Beispiele</li>
 				<li>Einsatz in der realen Welt</li>
 			</ul>
 		</div>
@@ -98,7 +95,8 @@
 					<b>Model:</b> enth&auml;lt Daten und Programmlogik, diese sind nicht nach au&szlig;en sichtbar.</br></br>
 					<b>View: </b> gibt die Ansicht des Models aus, die ben&ouml;tigten Daten kommen vom Model</br></br>
 					<b>Controller: </b>steuert den Verarbeitungsprozess. Nimmt Userinput entgegen und &auml;ndert das Model ab.
-				</p>
+				</p><br>
+				<p>nicht alle Teile m&uuml;ssen bei Backbone.js vorhanden sein</p>
 			</div>
 		</div>
 
@@ -141,10 +139,52 @@
 			</code></pre>	
 		</div>
 
-		<div id="Demo" class="step slide" data-x="2000" data-y="-500">
-			<q>SCREENSHOT</q>
-			<p>LINK AUF DEMO</p>
-			<q><a href="http://backbone-js-demo.github.io/presentation/" target="_blank">Demo</a></q>
+		<div id="Bsp1" class="step slide" data-x="2000" data-y="-500">
+			<a href="file:///E:/Plattformen%20&%20Frameworks/Backbone-Bsp/bsp1.html" target="_blank"><q>Beispiel 1</q></a><br>
+			<ul>
+				<li>Zeigt, wie Backbone.js DOM-Manipulation arbeitet</li>
+				<li>klare Trennung der einzelnen Funktionen</li>
+			</ul><br><br>
+			<p>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel1/bsp1.html" target="_blank" style="margin-right:200px; margin-left: 50px;">HTML-Code</a>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel1/bsp1.js" target="_blank">JS-Code</a>
+			</p>
+		</div>
+		
+		<div id="Bsp2" class="step slide" data-x="2000" data-y="500">
+			<a href="file:///E:/Plattformen%20&%20Frameworks/Backbone-Bsp/bsp2.html" target="_blank"><q>Beispiel 2</q></a><br>
+			<ul>
+				<li>zeigt, wie Buttons und andere Events mit Backbone.js verarbeitet werden</li>
+			</ul><br><br>
+			<p>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel2/bsp2.html" target="_blank" style="margin-right:200px; margin-left: 50px;">HTML-Code</a>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel2/bsp2.js" target="_blank">JS-Code</a>
+			</p>
+		</div>
+		
+		<div id="Bsp3" class="step slide" data-x="2000" data-y="1500">
+			<a href="file:///E:/Plattformen%20&%20Frameworks/Backbone-Bsp/bsp3.html" target="_blank"><q>Beispiel 3</q></a><br>
+			<ul>
+				<li>erweitert Beispiel 2</li>
+				<li>Adressen werden jetzt in einer Collection(Liste) gespeichert</li>
+			</ul><br><br>
+			<p>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel3/bsp3.html" target="_blank" style="margin-right:200px; margin-left: 50px;">HTML-Code</a>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel3/bsp3.js" target="_blank">JS-Code</a>
+			</p>
+		</div>
+		
+		<div id="Bsp4" class="step slide" data-x="2000" data-y="2500">
+			<a href="file:///E:/Plattformen%20&%20Frameworks/Backbone-Bsp/bsp4.html" target="_blank"><q>Beispiel 4</q></a><br>
+			<ul>
+				<li>Namen k&ouml;nnen jetzt vom Nutzer eingegeben werden</li>
+				<li>Datens&auml;tze l&auml;ssen sich jetzt tauschen</li>
+				<li>Datens&auml;tze k&ouml;nnen auch gel&ouml;scht werden</li>
+			</ul><br><br>
+			<p>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel4/bsp4.html" target="_blank" style="margin-right:200px; margin-left: 50px;">HTML-Code</a>
+				<a href="https://raw.githubusercontent.com/Backbone-js-Demo/presentation/master/beispiel4/bsp4.js" target="_blank">JS-Code</a>
+			</p>
 		</div>
 
 		<div id="Einsatz" class="step slide" data-x="3000" data-y="-1500">
@@ -158,7 +198,6 @@
 					<td><a href="http://www.rbmaradio.com/">http://www.rbmaradio.com/</a></td>
 					<td><a href="https://www.linkedin.com/">https://www.linkedin.com/</a></td>
 				</tr>
-				
 				<tr>
 					<td><img width=90% src="https://cloud.githubusercontent.com/assets/7556821/2970225/967510e8-db58-11e3-8277-f176412bbd39.png" width="100%" alt="Foursquare"></td>
 					<td><img width=90% src="https://cloud.githubusercontent.com/assets/7556821/2970202/181dd3b0-db58-11e3-9bda-b8f3ee714659.png" width="100%" alt="Soundcloud"></td>
