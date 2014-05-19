@@ -1,8 +1,7 @@
 #Presentation: Backbone.js
-====================
 
-##DESCRIPTION
-This presentation was created as a student project for the the 2014 Plattforms & Frameworks class at the DHBW Mannheim.  
+##Description
+This presentation was created as a student project for the 2014 Plattforms & Frameworks class at the DHBW Mannheim.  
 This presentation was created to serve as a short introduction into the javascript framework  [Backbone.js](http://backbonejs.org/). It consists of a general summary of the purpose and features of Backbone.js and a small example of how Backbone.js can be used.
 To show how a Backbone.js application works and how to build one, this presentation includes four simple example applications. The examples show the build of a simple addressbook and build on top of each other. Yet they can be run independantly from each other.
 
