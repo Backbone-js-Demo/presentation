@@ -41,11 +41,11 @@ To display any content other than what you have created in your HTML page, you h
 
 	//Define Events and what should be done
     events: {
-      'click button#add': 'addAddress'
+      'click button#add': 'addLine'
     },
 
     initialize: function(){
-      _.bindAll(this, 'render', 'addAddress');
+      _.bindAll(this, 'render', 'addLine');
       this.counter = 0;
       this.render();
     },
@@ -53,7 +53,7 @@ To display any content other than what you have created in your HTML page, you h
       $(this.el).append("<button id='add'>Add line</button>");
       $(this.el).append("<p></p>");
     },
-    addAddress: function(){
+    addLine: function(){
       this.counter++;
       $('p', this.el).append("Line no."+this.counter+"<br>");
     }
